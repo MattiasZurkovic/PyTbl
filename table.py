@@ -5,13 +5,13 @@ from sys import stdout
 def new(columns):
     for i in columns:
         length = len(i)
-        stdout.write('-' * (length + 6))
+        stdout.write('-' * (length + 8))
+    print('\r')
+    for i in columns:
         stdout.write('|   ' + i + '   |')
-
 
 def add_row(input):
     for x in input:
         stdout.write('|   ' + x + '   |')
 
-
-new(['Weapon', 'Damage'])
+new(['Animal', 'Danger'])
