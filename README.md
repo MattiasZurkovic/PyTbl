@@ -22,7 +22,7 @@ TODO:
 ----------
 As the library is still in development, I have a 'checklist' for what the library should be able to do:
 * Be able to sort the tables values (eg. by length, value, etc.)
-* Style the table (colors, label styles)
+* Style the table (colors, label styles) :white_check_mark:
 * Make it more 'automatic'
 
 License
