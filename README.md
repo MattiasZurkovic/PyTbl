@@ -12,7 +12,13 @@ I am currently in the process of putting this library on PyPI and <tt>pip</tt>, 
 * Copy and paste that directory into your Python project's libraries folder. (You need to make sure that it is in the same root as your interpreter)
 * Remember, soon you will be able to use <tt>pip</tt> to install the module :-)
 
-TODO
+Usage:
+----------
+After manually installing the library it is time for you to use it!
+* Import the library like any other: <tt>from PyTbl import table</tt>
+* To create a table use <tt>table_name = table</tt>
+
+TODO:
 ----------
 As the library is still in development, I have a 'checklist' for what the library should be able to do:
 * Be able to sort the tables values (eg. by length, value, etc.)
