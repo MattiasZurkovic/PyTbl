@@ -12,5 +12,14 @@ I am currently in the process of putting this library on PyPI and <tt>pip</tt>, 
 * Copy and paste that directory into your Python project's libraries folder. (You need to make sure that it is in the same root as your interpreter)
 * Remember, soon you will be able to use <tt>pip</tt> to install the module :-)
 
+TODO
+----------
+As the library is still in development, I have a 'checklist' for what the library should be able to do:
+* Be able to sort the tables values (eg. by length, value, etc.)
+* Style the table (colors, label styles)
+* Make it more 'automatic'
+
 License
 ----------
+PyTbl is under the MIT License. See the <tt>LICENSE.md</tt> file for details.
+Copyright (c) 2015 Mattias Zurkovic
