@@ -3,11 +3,27 @@ __author__ = 'mattias'
 from sys import stdout
 
 global label_length
+global label_style
 
-def new_columns(columns):
+def new_columns(columns, style):
+    if style == 1:
+        label_style = '='
+    elif style == 2:
+        label_style = '~'
+    elif style == 3:
+        label_style = '-'
+    elif style == 4:
+        label_style = '#'
+    elif style == 5:
+        label_style = '▬'
+    elif style == 6:
+        label_style = '▫'
+    else:
+        label_style = '='
+
     for i in columns:
         length = len(i)
-        stdout.write('+' + '=' * (length + 2) + '+')
+        stdout.write('+' + label_style * (length + 2) + '+')
     print('\r')
 
     for i in columns:
@@ -17,13 +33,13 @@ def new_columns(columns):
 
     for i in columns:
         length = len(i)
-        stdout.write('+' + '=' * (length + 2) + '+')
+        stdout.write('+' + label_style * (length + 2) + '+')
     print('\r')
 
-    for i in columns:
-        return len(i)
 
 
+
+# Add a row - this method adds a row to the table
 def add_row(input):
     for x in input:
         stdout.write('| ' + x + ' |')
@@ -35,7 +51,7 @@ def add_row(input):
 
 
 
-new_columns(['Animal', 'Damage Count', 'Name  '])
+new_columns(['Animal', 'Damage Count', 'Name  '], 1)
 add_row(['Bear  ', '2000        ', 'Po    '])
 add_row(['Cat   ', '3           ', 'Mew   '])
 add_row(['Dog   ', '-10         ', 'Hunter'])
