@@ -2,7 +2,9 @@ __author__ = 'mattias'
 
 from sys import stdout
 
-def new(columns):
+global label_length
+
+def new_columns(columns):
     for i in columns:
         length = len(i)
         stdout.write('+' + '=' * (length + 2) + '+')
@@ -18,6 +20,9 @@ def new(columns):
         stdout.write('+' + '=' * (length + 2) + '+')
     print('\r')
 
+    for i in columns:
+        return len(i)
+
 
 def add_row(input):
     for x in input:
@@ -30,7 +35,8 @@ def add_row(input):
 
 
 
-new(['Animal', 'Damage Count'])
-add_row(['Bear  ', '2000        '])
-add_row(['Cat   ', '3           '])
+new_columns(['Animal', 'Damage Count', 'Name  '])
+add_row(['Bear  ', '2000        ', 'Po    '])
+add_row(['Cat   ', '3           ', 'Mew   '])
+add_row(['Dog   ', '-10         ', 'Hunter'])
 
