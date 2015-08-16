@@ -8,8 +8,8 @@ PyTbl (pronounced 'Pi' - 'Table') is a Python library/module that helps you crea
 Installing
 ----------
 I am currently in the process of putting this library on PyPI and <tt>pip</tt>, but you can still use it - you will just need to install it manually:
-1. Clone this repository into any destination you would like (<tt>git clone https://github.com/MattiasZurkovic/PyTbl.git</tt>)
-2. Copy and paste that directory into your Python project's libraries folder. (You need to make sure that it is in the same root as your interpreter)
+* Clone this repository into any destination you would like (<tt>git clone https://github.com/MattiasZurkovic/PyTbl.git</tt>)
+* Copy and paste that directory into your Python project's libraries folder. (You need to make sure that it is in the same root as your interpreter)
 * Remember, soon you will be able to use <tt>pip</tt> to install the module :-)
 
 License
