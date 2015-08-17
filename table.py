@@ -52,6 +52,7 @@ def add_row(input):
 
 
 def add_column(column_title, column_data):
+    # This is for the column TITLE - eg. Title could be Animal Names
     for m in column_title:
         length = len(m)
         stdout.write('+' + '=' * (length + 2) + '+')
@@ -65,7 +66,9 @@ def add_column(column_title, column_data):
     for m in column_title:
         stdout.write('+' + '=' * (length + 2) + '+')
     print('\r')
+
 # ----------------------------------------------------
+    # This is for the DATA of the column - eg. Label == Animal Names, the Data would be Sparkles, Hunter, etc.
     for m in column_data:
         this_length = len(m)
 
@@ -75,8 +78,11 @@ def add_column(column_title, column_data):
             wanted_l = this_length - length
 
         stdout.write('| ' + m + ' ' * (wanted_l) + ' |')
-    print('\r')
+        print('\r')
+
+    stdout.write('+' + '-' * (length + 2) + '+')
 
 
-add_column(['Animal'], ['Hello', 'Cat'])
+add_column(['Animal  '], ['Tiger', 'Dolphin'])
+
 
